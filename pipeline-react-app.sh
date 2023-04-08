@@ -5,6 +5,8 @@ echo
 if [ -e  /usr/lib/systemd/system/react-app.service ];
 then
 # SE SATISFAZ ENTRA AQUI
+rm -rf /usr/lib/systemd/system/react-app.service
+mv /primeira_pipeline/react-app.service /usr/lib/systemd/system
 rm -rf primeira_pipeline
 else
 echo
