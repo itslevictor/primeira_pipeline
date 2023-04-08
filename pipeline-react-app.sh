@@ -4,7 +4,6 @@ echo
 #checkout
 if [ -e  /usr/lib/systemd/system/react-app.service ];
 then
-
 # SE SATISFAZ ENTRA AQUI
 rm -rf primeira_pipeline
 else
@@ -19,9 +18,9 @@ fi
 if [ -d /usr/local/lib/node_modules ];
 then
 # SE SATISFAZ ENTRA AQUI
-echo
+echo 2
 else
-echo
+echo 3
 mkdir /app
 # SE NAO SATISFAZ ENTRA AQUI
 curl -sL https://rpm.nodesource.com/setup_16.x | sudo bash -
