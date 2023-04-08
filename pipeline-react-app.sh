@@ -4,7 +4,7 @@ echo
 #checkout
 if [ -e  /usr/lib/systemd/system/react-app.service ];
 then
-echo 1
+
 # SE SATISFAZ ENTRA AQUI
 rm -rf primeira_pipeline
 else
@@ -18,7 +18,6 @@ fi
 
 if [ -d /usr/local/lib/node_modules ];
 then
-echo 1
 # SE SATISFAZ ENTRA AQUI
 else
 echo
@@ -34,7 +33,7 @@ fi
 
 if [ -d repository/ ];
 then
-echo 1
+
 # SE SATISFAZ ENTRA AQUI
 echo entrando no repositorio e removendo a pasta a força
 echo
@@ -50,7 +49,6 @@ fi
 
 if [ -d app/ ];
 then
-echo 1
 # SE SATISFAZ ENTRA AQUI
 else
 echo criada a pasta app
