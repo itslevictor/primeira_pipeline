@@ -1,0 +1,16 @@
+[Unit]
+Description= react-app
+After=syslog.target
+
+[Service]
+User=root
+
+ExecStart=/usr/bin/npx serve /app/react-app
+SuccessExitStatus=143
+ExecStop=/bin/kill -15 $MAINPID
+
+[Install]
+WantedBy=multi-user.target
+
+systemctl status react-app
+systemctl start react-app
