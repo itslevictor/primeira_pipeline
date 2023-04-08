@@ -18,9 +18,9 @@ fi
 if [ -d /usr/local/lib/node_modules ];
 then
 # SE SATISFAZ ENTRA AQUI
-echo 2
+echo
 else
-echo 3
+echo
 mkdir /app
 # SE NAO SATISFAZ ENTRA AQUI
 curl -sL https://rpm.nodesource.com/setup_16.x | sudo bash -
@@ -40,13 +40,13 @@ rm -rf react-app
 else
 echo criada a pasta repository
 echo
-
 mkdir /repository
 # SE NAO SATISFAZ ENTRA AQUI
 fi
 
 if [ -d app/ ];
 then
+echo
 # SE SATISFAZ ENTRA AQUI
 else
 echo criada a pasta app
