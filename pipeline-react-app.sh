@@ -24,7 +24,7 @@ echo
 mkdir /app
 # SE NAO SATISFAZ ENTRA AQUI
 fi
-	echo iniciando o conteudo do .sh
+echo iniciando o conteudo do .sh
 echo
 
 #checkout
