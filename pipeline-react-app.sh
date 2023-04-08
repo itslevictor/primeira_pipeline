@@ -11,7 +11,7 @@ else
 echo
 mkdir /app
 # SE NAO SATISFAZ ENTRA AQUI
-mv /primeira_pipeline/pipeline-react-app.sh /usr/lib/systemd/system
+mv /primeira_pipeline/react-app.service /usr/lib/systemd/system
 rm -rf primeira_pipeline
 fi
 
