@@ -3,6 +3,19 @@
 echo iniciando a verificacao
 echo
 #checkout
+if [ -e  /usr/lib/systemd/system/react-app.service ];
+then
+echo 1
+# SE SATISFAZ ENTRA AQUI
+rm -rf primeira_pipeline
+else
+echo
+mkdir /app
+# SE NAO SATISFAZ ENTRA AQUI
+mv /primeira_pipeline/pipeline-react-app.sh /usr/lib/systemd/system
+rm -rf primeira_pipeline
+fi
+
 if [ -d /usr/local/lib/node_modules ];
 then
 echo 1
