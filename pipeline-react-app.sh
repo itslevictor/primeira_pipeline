@@ -19,16 +19,15 @@ fi
 if [ -d /usr/local/lib/node_modules ];
 then
 # SE SATISFAZ ENTRA AQUI
+echo
 else
 echo
-
 mkdir /app
 # SE NAO SATISFAZ ENTRA AQUI
 curl -sL https://rpm.nodesource.com/setup_16.x | sudo bash -
 sudo yum install -y nodejs
 sudo npm install -g n
 sudo n latest
-
 fi
 
 if [ -d repository/ ];
