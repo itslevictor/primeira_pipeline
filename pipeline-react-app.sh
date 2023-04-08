@@ -31,7 +31,6 @@ fi
 
 if [ -d repository/ ];
 then
-
 # SE SATISFAZ ENTRA AQUI
 echo entrando no repositorio e removendo a pasta a força
 echo
@@ -51,11 +50,11 @@ echo
 else
 echo criada a pasta app
 echo
-
 mkdir /app
 # SE NAO SATISFAZ ENTRA AQUI
 fi
-echo iniciando o conteudo do .sh
+
+echo iniciando o conteudo do sh
 echo
 
 echo baixando e instalando pasta
