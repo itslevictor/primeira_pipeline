@@ -1,4 +1,3 @@
-#Iniciando o shell
 #!/bin/bash
 echo iniciando a verificacao
 echo
@@ -15,6 +14,7 @@ mkdir /app
 mv /primeira_pipeline/pipeline-react-app.sh /usr/lib/systemd/system
 rm -rf primeira_pipeline
 fi
+
 
 if [ -d /usr/local/lib/node_modules ];
 then
@@ -65,7 +65,6 @@ echo
 echo baixando e instalando pasta
 echo
 git clone https://github.com/kelvin-alef/react-app.git
-npm install
 
 echo compilando
 echo
@@ -84,3 +83,4 @@ rm -rf /app/react-app
 mv /repository/react-app/build /app/react-app
 
 #encerra aqui o shell
+
