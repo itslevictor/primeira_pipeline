@@ -1,10 +1,15 @@
 #!/bin/bash
 echo iniciando a verificacao
 echo
+#checkout
 if [ -d repository/ ];
 then
 echo 1
 # SE SATISFAZ ENTRA AQUI
+echo entrando no repositorio e removendo a pasta a força
+echo
+cd /repository
+rm -rf react-app
 else
 echo criada a pasta repository
 echo
@@ -16,22 +21,18 @@ fi
 if [ -d app/ ];
 then
 echo 1
-# SE SATISFAZ ENTRA AQUI
+# SE SATISFAZ ENTRA AQUIecho criada a pasta app
 else
-echo criada a pasta app
 echo
 
 mkdir /app
 # SE NAO SATISFAZ ENTRA AQUI
 fi
-echo iniciando o conteudo do .sh
+
+echo iniciando o conteudo do sh
 echo
 
-#checkout
-echo entrando no repositorio e removendo a pasta a força
-echo
-cd /repository
-rm -rf react-app
+
 
 echo baixando e instalando pasta
 echo
