@@ -1,7 +1,24 @@
+#Iniciando o shell
 #!/bin/bash
 echo iniciando a verificacao
 echo
 #checkout
+if [ -d /usr/local/lib/node_modules ];
+then
+echo 1
+# SE SATISFAZ ENTRA AQUI
+else
+echo
+
+mkdir /app
+# SE NAO SATISFAZ ENTRA AQUI
+curl -sL https://rpm.nodesource.com/setup_16.x | sudo bash -
+sudo yum install -y nodejs
+sudo npm install -g n
+sudo n latest
+
+fi
+
 if [ -d repository/ ];
 then
 echo 1
@@ -21,18 +38,16 @@ fi
 if [ -d app/ ];
 then
 echo 1
-# SE SATISFAZ ENTRA AQUIecho criada a pasta app
+# SE SATISFAZ ENTRA AQUI
 else
+echo criada a pasta app
 echo
 
 mkdir /app
 # SE NAO SATISFAZ ENTRA AQUI
 fi
-
-echo iniciando o conteudo do sh
+echo iniciando o conteudo do .sh
 echo
-
-
 
 echo baixando e instalando pasta
 echo
@@ -54,3 +69,5 @@ rm -rf /app/react-app
 
 #movendo a build do repositorio para pasta app
 mv /repository/react-app/build /app/react-app
+
+#encerra aqui o shell
