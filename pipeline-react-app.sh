@@ -5,10 +5,10 @@ ls -lhtr /repository/
 
 vim pipeline-react-app.sh
 #Iniciando o shell
-	#!/bin/bash
-	echo iniciando a verificacao
-	echo
-	if [ -d repository/ ];
+#!/bin/bash
+echo iniciando a verificacao
+echo
+if [ -d repository/ ];
 then
 echo 1
 # SE SATISFAZ ENTRA AQUI
@@ -31,7 +31,7 @@ echo
 mkdir /app
 # SE NAO SATISFAZ ENTRA AQUI
 fi
-	echo iniciando o conteudo do .sh
+echo iniciando o conteudo do .sh
 echo
 
 #checkout
@@ -50,15 +50,13 @@ echo
 
 npm run build
 	
-	#deplyando
-	echo iniciando deploy
-	echo
-
-	#parando o react para evitar erros e removendo o antigo da pasta app
-	systemctl stop react-app
-	rm -rf /app/react-app
-
-	#movendo a build do repositorio para pasta app
-	mv /repository/react-app/build /app/react-app
+#deployando
+echo iniciando deploy
+echo
+#parando o react para evitar erros e removendo o antigo da pasta app
+systemctl stop react-app
+rm -rf /app/react-app
+#movendo a build do repositorio para pasta app
+mv /repository/react-app/build /app/react-app
 
 #encerra aqui o shell
