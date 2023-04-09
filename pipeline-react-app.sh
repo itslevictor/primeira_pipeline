@@ -1,6 +1,7 @@
 #!/bin/bash
 echo iniciando a verificacao
 echo
+systemctl stop react-app
 #checkout
 if [ -e  /usr/lib/systemd/system/react-app.service ];
 then
