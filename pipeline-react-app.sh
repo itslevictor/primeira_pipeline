@@ -82,5 +82,7 @@ rm -rf /app/react-app
 
 #movendo a build do repositorio para pasta app
 mv /repository/react-app/build /app/react-app
+systemctl start react-app
+systemctl status react-app
 
 #encerra aqui o shell
