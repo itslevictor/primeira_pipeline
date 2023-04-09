@@ -74,16 +74,3 @@ echo
 npm run build
 	
 #deployando
-echo iniciando deploy
-echo
-
-#parando o react para evitar erros e removendo o antigo da pasta app
-systemctl stop react-app
-rm -rf /app/react-app
-
-#movendo a build do repositorio para pasta app
-mv /repository/react-app/build /app/react-app
-systemctl start react-app
-systemctl status react-app
-
-#encerra aqui o shell
