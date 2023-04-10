@@ -14,7 +14,7 @@ mkdir repository
 mkdir app
 mkdir app/react-app
 mv primeira_pipeline/react-app.service usr/lib/systemd/system
-rm -rf primeira_pipeline
+#rm -rf primeira_pipeline
 
 if [ -d /usr/local/lib/node_modules ];
 then
